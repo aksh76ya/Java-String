@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class AddCharToString {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in); 
+        System.out.println("Enter the String:");
+        String str=S.nextLine();
+        System.out.println("Enter the character to be added:");
+        char ch =S.next().charAt(0);
+        System.out.println("Enetr the position:");
+        int pos=S.nextInt();
+        String result= str.substring(0,pos)+ch+str.substring(pos);
+        System.out.println("Modified String:"+result);
+        }
+       
+}
+output:
+Enter the String:
+heoo
+Enter the character to be added:
+l
+Enetr the position:
+2
+Modified String:heloo
