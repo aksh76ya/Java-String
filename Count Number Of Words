@@ -1,0 +1,10 @@
+import java.util.Scanner;
+class CountWords {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in); 
+        System.out.println("Enter a String");
+        String words = S.nextLine();
+        int countWords = words.split(" ").length;  
+        System.out.println(countWords); 
+    }
+}
