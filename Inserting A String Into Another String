@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class InsertString {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in); 
+        System.out.println("Enter the MainString:");
+        String mainstring=S.nextLine();
+        System.out.println("Enter the SubString to Be Added:");
+        String insertstring=S.nextLine();
+        System.out.println("Enter the Postion at whic the String need to be added:");
+        int position=S.nextInt();
+        String result=mainstring.substring(0,position)+insertstring+mainstring.substring(position);
+        System.out.println("Result String:"+result);
+       
+}
+}
+
+Enter the MainString:
+wecome
+Enter the SubString to Be Added:
+l
+Enter the Postion at whic the String need to be added:
+2
+Result String:welcome
