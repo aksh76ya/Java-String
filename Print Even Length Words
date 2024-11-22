@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in); 
+        System.out.println("Enter the String");
+        String input=S.nextLine();
+        String[] words=input.split(" ");
+        {
+            System.out.println(" Even Length Words:");
+         
+        for(String word : words){
+            if(word.length() % 2 == 0){
+                System.out.println(word);
+            }
+        }
+    }
+}
+}
+
+OutPut:
+Enter the String
+Hello hi welcome to sathyabama heheee
+Even Length Words:
+hi
+to
+sathyabama
+heheee
