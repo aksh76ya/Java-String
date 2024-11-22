@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class CompareStrings {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in); 
+        System.out.println("Enter the First String:");
+        String FirstString = S.nextLine();
+        System.out.println("Enter the Second String:");
+        String SecondString = S.nextLine();
+        if(FirstString.contains(SecondString)){
+            System.out.println("The First String contains Second String");
+        } else{
+            System.out.println("The First String doesn't contain Second String");
+        }
+       
+    }
+}
+
+
